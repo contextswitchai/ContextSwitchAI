@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — ContextSwitchAI</title>
+<meta name="description" content="ContextSwitchAI Privacy Policy. We collect zero data. All processing is local, no servers, no analytics.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #f4f5f9;
+  --s1:       #ffffff;
+  --s2:       #eef0f6;
+  --s3:       #d8dce8;
+  --t1:       #0d1117;
+  --t2:       #4a5568;
+  --t3:       #8a9bb5;
+  --t4:       #c0cad8;
+  --cyan:     #0078d4;
+  --cyan-d:   rgba(0,120,212,0.09);
+  --cyan-bd:  rgba(0,120,212,0.25);
+  --green:    #16a34a;
+  --green-d:  rgba(22,163,74,0.09);
+  --green-bd: rgba(22,163,74,0.25);
+  --b1:       rgba(0,0,0,0.07);
+  --b2:       rgba(0,0,0,0.13);
+  --r:        10px;
+  --mono:     'DM Mono', 'SF Mono', monospace;
+  --sans:     'DM Sans', system-ui, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: var(--sans); background: var(--bg); color: var(--t1); line-height: 1.6; }
+a { color: var(--cyan); text-decoration: underline; text-underline-offset: 2px; }
+a:hover { color: #0068c0; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--s2); }
+::-webkit-scrollbar-thumb { background: var(--s3); border-radius: 3px; }
+
+/* ── NAV ─────────────────────────────────────────────── */
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: rgba(244,245,249,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--b1);
+}
+.nav-inner {
+  max-width: 800px; margin: 0 auto; padding: 0 24px;
+  display: flex; align-items: center; justify-content: space-between;
+  height: 58px; gap: 16px;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-weight: 600; font-size: 14px; color: var(--t1);
+  text-decoration: none;
+}
+.nav-logo-icon {
+  width: 30px; height: 30px; background: var(--cyan); border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; box-shadow: 0 2px 8px rgba(0,120,212,0.3);
+  color: #fff; font-weight: 700; font-family: var(--mono);
+}
+.nav-back {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-size: 13.5px; font-weight: 500; color: var(--t2);
+  padding: 6px 14px; border-radius: 6px; border: 1.5px solid var(--b2);
+  background: var(--s1); transition: all .15s; text-decoration: none;
+}
+.nav-back:hover { color: var(--cyan); border-color: var(--cyan-bd); background: var(--cyan-d); }
+
+/* ── LAYOUT ─────────────────────────────────────────── */
+.page-wrap {
+  max-width: 800px; margin: 0 auto; padding: 48px 24px 100px;
+}
+
+/* ── HEADER ─────────────────────────────────────────── */
+.page-eyebrow {
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--mono); font-size: 11px; font-weight: 500;
+  letter-spacing: 1.3px; text-transform: uppercase;
+  color: var(--cyan); background: var(--cyan-d);
+  border: 1px solid var(--cyan-bd); padding: 4px 12px; border-radius: 20px;
+  margin-bottom: 18px;
+}
+h1 {
+  font-size: 36px; font-weight: 700; letter-spacing: -.4px;
+  color: var(--t1); margin-bottom: 10px; line-height: 1.2;
+}
+.page-meta {
+  font-size: 13px; color: var(--t3); font-family: var(--mono);
+  margin-bottom: 32px;
+}
+
+/* ── ZERO-DATA BANNER ───────────────────────────────── */
+.zero-banner {
+  background: var(--cyan-d); border: 1.5px solid var(--cyan-bd);
+  border-radius: var(--r); padding: 18px 22px; margin-bottom: 24px;
+}
+.zero-banner p { font-size: 15px; color: var(--t1); line-height: 1.7; margin: 0; }
+
+/* ── PILL TAGS ──────────────────────────────────────── */
+.pill-row {
+  display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px;
+}
+.pill {
+  display: inline-flex; align-items: center; gap: 5px;
+  font-size: 12px; font-weight: 500;
+  background: var(--green-d); border: 1px solid var(--green-bd);
+  color: var(--green); padding: 5px 13px; border-radius: 20px;
+}
+
+/* ── SECTIONS ───────────────────────────────────────── */
+.section { margin-bottom: 36px; }
+.section h2 {
+  font-size: 18px; font-weight: 600; color: var(--t1);
+  margin-bottom: 12px; padding-bottom: 10px;
+  border-bottom: 1.5px solid var(--b1);
+  display: flex; align-items: center; gap: 8px;
+}
+.section h2 .icon {
+  width: 28px; height: 28px; background: var(--s2);
+  border: 1px solid var(--b1); border-radius: 7px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; flex-shrink: 0;
+}
+.section p { font-size: 14.5px; color: var(--t2); line-height: 1.78; margin-bottom: 12px; }
+.section p:last-child { margin-bottom: 0; }
+.section ul { padding-left: 20px; display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+.section li { font-size: 14.5px; color: var(--t2); line-height: 1.7; }
+.section li b, .section p b { color: var(--t1); }
+code {
+  font-family: var(--mono); font-size: 12px;
+  background: var(--s2); padding: 1px 7px; border-radius: 4px;
+  border: 1px solid var(--b1); color: var(--t1);
+}
+
+/* ── PERMISSIONS TABLE ──────────────────────────────── */
+.perm-table {
+  border: 1.5px solid var(--b1); border-radius: var(--r);
+  overflow: hidden; margin-top: 14px; margin-bottom: 12px;
+}
+.perm-head {
+  display: grid; grid-template-columns: 150px 1fr;
+  background: var(--s2); border-bottom: 1.5px solid var(--b1);
+  padding: 8px 16px;
+}
+.perm-head span { font-size: 12px; font-weight: 700; color: var(--t1); font-family: var(--mono); }
+.perm-row {
+  display: grid; grid-template-columns: 150px 1fr;
+  border-bottom: 1px solid var(--b1); padding: 10px 16px;
+}
+.perm-row:last-child { border-bottom: none; }
+.perm-row:nth-child(even) { background: var(--s1); }
+.perm-row:nth-child(odd) { background: var(--s2); }
+.perm-key { font-family: var(--mono); font-size: 12px; color: var(--cyan); padding-top: 2px; }
+.perm-val { font-size: 13.5px; color: var(--t2); line-height: 1.65; }
+
+/* ── CONTACT CARD ───────────────────────────────────── */
+.contact-card {
+  display: flex; align-items: flex-start; gap: 14px;
+  background: var(--s1); border: 1.5px solid var(--cyan-bd);
+  border-radius: var(--r); padding: 18px 20px; margin-top: 12px;
+}
+.contact-icon {
+  width: 40px; height: 40px; background: var(--cyan-d);
+  border: 1px solid var(--cyan-bd); border-radius: 9px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 20px; flex-shrink: 0;
+}
+.contact-card .label { font-size: 13px; font-weight: 600; color: var(--t1); margin-bottom: 4px; }
+.contact-card a { font-size: 14.5px; font-family: var(--mono); }
+
+/* ── FOOTER ─────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--b1); padding: 28px 24px;
+  text-align: center; font-size: 13px; color: var(--t4);
+}
+footer a { color: var(--t3); text-decoration: none; }
+footer a:hover { color: var(--cyan); }
+
+@media (max-width: 600px) {
+  h1 { font-size: 28px; }
+  .perm-head, .perm-row { grid-template-columns: 120px 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <div class="nav-logo-icon">CS</div>
+      ContextSwitchAI
+    </a>
+    <a href="index.html" class="nav-back">← Back to home</a>
+  </div>
+</nav>
+
+<!-- MAIN -->
+<div class="page-wrap">
+
+  <div class="page-eyebrow">🔒 Legal</div>
+  <h1>Privacy Policy</h1>
+  <p class="page-meta">ContextSwitchAI · Extension v1.0 · Last updated: February 2026 · Effective: February 2026</p>
+
+  <!-- TL;DR -->
+  <div class="zero-banner">
+    <p>🔒 <strong>tl;dr — the short version:</strong> We collect absolutely nothing. No data is ever sent to any external server — because there is no server. All processing happens locally inside your browser, on your device. Exported files are saved directly to your downloads folder. No account, login, or email address is ever required.</p>
+  </div>
+
+  <!-- Quick pills -->
+  <div class="pill-row">
+    <span class="pill">✓ No data sent to any server</span>
+    <span class="pill">✓ No analytics or telemetry</span>
+    <span class="pill">✓ No account or login required</span>
+    <span class="pill">✓ Exports saved locally only</span>
+    <span class="pill">✓ No third-party libraries at runtime</span>
+  </div>
+
+  <!-- Section 1: Who We Are -->
+  <div class="section">
+    <h2><span class="icon">👋</span> Who We Are</h2>
+    <p>ContextSwitchAI is a free Chrome browser extension. It has no corporate entity, no paid tier, no subscription, and no business model that depends on your data. The extension is developed and maintained as a project by <a href="https://linkedin.com/in/aditya-mittal-493b92243" target="_blank">Aditya Mittal</a> and <a href="https://linkedin.com/in/manas-tiwari-360686222" target="_blank">Manas Tiwari</a>, and is distributed through the Chrome Web Store at no cost.</p>
+    <p>This privacy policy describes how the extension handles information when you use it.</p>
+  </div>
+
+  <!-- Section 2: What We Collect -->
+  <div class="section">
+    <h2><span class="icon">📭</span> What Data We Collect</h2>
+    <p><strong>We do not collect any personal data.</strong></p>
+    <p>The extension does not collect, store, transmit, or share any personal information, usage data, browsing history, conversation content, or any other data. There is no analytics integration, no crash reporting service, no remote logging of any kind.</p>
+    <p>The extension has no backend server, no database, and no network requests of its own. Every operation — parsing conversations, compressing text, building the JSON export, attaching files to AI chat inputs — happens entirely inside your browser process and never leaves your device.</p>
+  </div>
+
+  <!-- Section 3: How Conversation Data Is Handled -->
+  <div class="section">
+    <h2><span class="icon">💬</span> How Your Conversation Data Is Handled</h2>
+    <p>When you click "Export Chat Memory," the extension reads the text content of the current AI chat page using the browser's DOM APIs. This content is:</p>
+    <ul>
+      <li>Processed entirely in memory within your browser tab</li>
+      <li>Compressed and formatted into a CCMF JSON structure</li>
+      <li>Saved to your local Downloads folder via the Chrome Downloads API</li>
+      <li>Optionally stored temporarily in <code>chrome.storage.local</code> so it can be automatically attached when you navigate to another AI platform in the same session</li>
+    </ul>
+    <p>This locally stored data never leaves your browser. It is not synced via <code>chrome.storage.sync</code>. It is not sent to any remote endpoint.</p>
+    <p>You can clear this data at any time by clicking the reset button <strong>(↺)</strong> in the extension popup, or by clearing your browser's extension storage in <code>chrome://settings</code>.</p>
+  </div>
+
+  <!-- Section 4: Permissions -->
+  <div class="section">
+    <h2><span class="icon">🔑</span> Permissions Explained</h2>
+    <p>The extension requests the following Chrome permissions. Each is used for a specific, limited purpose:</p>
+    <div class="perm-table">
+      <div class="perm-head">
+        <span>Permission</span>
+        <span>Why it's needed</span>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">activeTab</div>
+        <div class="perm-val">To read the current AI chat page's DOM when you click Export. The extension only accesses the tab you are actively using.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">scripting</div>
+        <div class="perm-val">To inject the content script that parses the conversation and to read selected text on the page when you open the Notes panel.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">downloads</div>
+        <div class="perm-val">To save the exported JSON or ZIP file directly to your Downloads folder without requiring you to manually choose a save location each time.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">storage</div>
+        <div class="perm-val">To temporarily hold your exported conversation data in <code>chrome.storage.local</code> so it can be auto-attached to a new AI chat tab in the same session. Also used to persist your notes between popup opens.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">tabs</div>
+        <div class="perm-val">To open a new tab for the target AI platform and to detect when that tab has finished loading so the memory file can be attached at the right moment.</div>
+      </div>
+      <div class="perm-row">
+        <div class="perm-key">host_permissions</div>
+        <div class="perm-val">To allow the content scripts to run on the specific AI platform domains (chatgpt.com, claude.ai, gemini.google.com, etc.). The extension only runs on these explicitly listed domains.</div>
+      </div>
+    </div>
+    <p>No permission grants access to your browsing history, bookmarks, passwords, cookies, or any other browser data. The extension only ever reads content from the specific AI chat pages it is explicitly authorised to access.</p>
+  </div>
+
+  <!-- Section 5: Third-Party Services -->
+  <div class="section">
+    <h2><span class="icon">🔗</span> Third-Party Services</h2>
+    <p>The extension does not use, load, or communicate with any third-party services, APIs, analytics platforms, advertising networks, or CDNs at runtime. All code that executes is bundled within the extension package itself.</p>
+    <p>The extension interacts with the AI platforms you visit (ChatGPT, Claude, Gemini, etc.) only insofar as it reads their page content and attaches files to their chat input. This interaction is subject to each platform's own privacy policy and terms of service. ContextSwitchAI has no affiliation with any of these platforms.</p>
+  </div>
+
+  <!-- Section 6: Children's Privacy -->
+  <div class="section">
+    <h2><span class="icon">🧒</span> Children's Privacy</h2>
+    <p>This extension is not directed at children under the age of 13. We do not knowingly collect any information from children. Since the extension collects no information from anyone, there is no special handling required for minors.</p>
+  </div>
+
+  <!-- Section 7: Data Security -->
+  <div class="section">
+    <h2><span class="icon">🛡</span> Data Security</h2>
+    <p>Since no data leaves your device, the security of your conversation exports is entirely within your control. The exported JSON files are stored in your local Downloads folder and are subject to the same security as all other files on your computer.</p>
+    <p>We recommend treating exported conversation files with the same care you would apply to any sensitive document, particularly if the conversations contain personal, financial, or confidential information.</p>
+  </div>
+
+  <!-- Section 8: Changes -->
+  <div class="section">
+    <h2><span class="icon">📋</span> Changes to This Policy</h2>
+    <p>If we make material changes to this privacy policy — for example, if a future version of the extension adds any form of network functionality — we will update the "Last updated" date above and increment the extension version. We will not introduce data collection without first updating this policy and making the change visible in the Chrome Web Store listing.</p>
+    <p>The current version of this policy always applies to the current version of the extension.</p>
+  </div>
+
+  <!-- Section 9: Your Rights -->
+  <div class="section">
+    <h2><span class="icon">⚖️</span> Your Rights</h2>
+    <p>Because we collect no personal data, there is no data to access, correct, export, or delete. If you wish to remove all locally stored extension data from your browser, you can do so by:</p>
+    <ul>
+      <li>Clicking the reset button <strong>(↺)</strong> in the extension popup to clear the current session's exported data</li>
+      <li>Going to <code>chrome://settings/siteData</code> and clearing storage for the extension</li>
+      <li>Uninstalling the extension, which removes all associated local storage</li>
+    </ul>
+  </div>
+
+  <!-- Section 10: Contact -->
+  <div class="section">
+    <h2><span class="icon">📧</span> Contact</h2>
+    <p>If you have any questions about this privacy policy or the extension's data practices, you can reach us at:</p>
+    <div class="contact-card">
+      <div class="contact-icon">📧</div>
+      <div>
+        <div class="label">Email</div>
+        <a href="mailto:contextswitchai@gmail.com">contextswitchai@gmail.com</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page-wrap -->
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 ContextSwitchAI · Built by <a href="https://linkedin.com/in/aditya-mittal-493b92243" target="_blank">Aditya Mittal</a> &amp; <a href="https://linkedin.com/in/manas-tiwari-360686222" target="_blank">Manas Tiwari</a> · <a href="https://chromewebstore.google.com/detail/contextswitchai/oodgeokclkgibmnnhegmdgcmaekblhof" target="_blank">Chrome Web Store</a></p>
+</footer>
+
+</body>
+</html>
